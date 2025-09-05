@@ -1,0 +1,21 @@
+{
+“manifest_version”: 3,
+“name”: “Secure Bookmark Manager”,
+“version”: “1.0.0”,
+“description”: “A secure bookmark manager with PIN protection, smart suggestions, and advanced organization features”,
+“permissions”: [
+“bookmarks”,
+“storage”,
+“tabs”,
+“activeTab”
+],
+“action”: {
+“default_popup”: “popup.html”,
+“default_title”: “Secure Bookmark Manager”
+},
+“icons”: {
+“16”: “data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMyIgZmlsbD0iIzM5NTNGRiIvPgo8cGF0aCBkPSJNNCAzSDEyVjEyLjVMOCAxMEw0IDEyLjVWM1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=”,
+“48”: “data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iOCIgZmlsbD0iIzM5NTNGRiIvPgo8cGF0aCBkPSJNMTIgOUgzNlYzNy41TDI0IDMwTDEyIDM3LjVWOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=”,
+“128”: “data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjAiIGZpbGw9IiMzOTUzRkYiLz4KPHA+IDMyIDI0SDk2Vjk5TDY0IDgwTDMyIDk5VjI0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==”
+}
+}
