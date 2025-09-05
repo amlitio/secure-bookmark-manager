@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Icon Generator</title>
+</head>
+<body>
+    <h2>Quick Icon Generator</h2>
+    <p>Right-click each canvas and save as PNG:</p>
+
+```
+<div>
+    <h3>icon16.png</h3>
+    <canvas id="icon16" width="16" height="16" style="border: 1px solid #ccc; image-rendering: pixelated; width: 64px; height: 64px;"></canvas>
+</div>
+
+<div>
+    <h3>icon48.png</h3>
+    <canvas id="icon48" width="48" height="48" style="border: 1px solid #ccc; width: 96px; height: 96px;"></canvas>
+</div>
+
+<div>
+    <h3>icon128.png</h3>
+    <canvas id="icon128" width="128" height="128" style="border: 1px solid #ccc; width: 128px; height: 128px;"></canvas>
+</div>
+
+<script>
+    // Simple bookmark icon generator
+    function drawIcon(canvas, size) {
+        const ctx = canvas.getContext('2d');
+        
+        // Background
+        ctx.fillStyle = '#3B82F6';
+        ctx.fillRect(0, 0, size, size);
+        
+        // Bookmark shape
+        const margin = size * 0.2;
+        const width = size - (margin * 2);
+        const height = size - margin;
+        
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(margin, margin, width, height);
+        
+        // Bookmark notch
+        const notchSize = size * 0.1;
+        ctx.fillStyle = '#3B82F6';
+        ctx.beginPath();
+        ctx.moveTo(margin + width/2 - notchSize, margin + height);
+        ctx.lineTo(margin + width/2, margin + height - notchSize);
+        ctx.lineTo(margin + width/2 + notchSize, margin + height);
+        ctx.fill();
+    }
+    
+    // Generate all icons
+    drawIcon(document.getElementById('icon16'), 16);
+    drawIcon(document.getElementById('icon48'), 48);
+    drawIcon(document.getElementById('icon128'), 128);
+</script>
+```
+
+</body>
+</html>
